@@ -37,8 +37,8 @@ zoom into the specific mile markers to identify areas of need.
 
 The user will have the ability to tap on any section of yellow or red section of a road to retrieve
 more information. Once the user taps or clicks on the section, a pop up window will appear. This
-window will give the user date that includes; number of vehicles reporting need, depth of axle
-change, date of las reported repairs, anticipated start date of repairs (if there is one) and cost.
+window will give the user data that includes; number of vehicles reporting need, depth of axle
+change, date of last reported repairs, anticipated start date of repairs (if there is one) and cost.
 
 ### Persistent data
 
