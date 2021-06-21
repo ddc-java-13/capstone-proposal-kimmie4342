@@ -1,51 +1,73 @@
 ## Summary
 
-Replace this paragraph with one or more paragraphs summarizing the purpose and operation of the software you propose to develop in this project.
+Critical Support is a software program that uses the GPS services that are already on most cars
+today to identify where there is a great need for road infrastructure repairs. With the advancement
+of internet of things, Critical Support monitors and measures how balanced the vehicles axles are as
+they travel over our roads. Identifying areas of the roads that need repair or improvements.
+
+The information will be identified and tracked using Geospatial Mapping to highlight infrastructure
+improvement needs. This information will be available to Federal, State and City Governments as well
+as contractors, so they have a comprehensible picture of the extent of damage along with the length
+of damaged road in need of repair.
 
 ## Intended users
 
-Write a bullet list here, including at least 2 different types of intended users. Make it reasonably specific; simply saying "Anyone who likes games" (for example) is not sufficiently specific.
+* Contractors that bid for road repair jobs.
 
-For each type of intended user, include at least 1 _user story_. A user story is usually just 1 simple sentence (no more than 2 sentences), in the voice of the intended user, stating a specific task that the user performs using the app, and the benefit that will be obtained. The simplest user stories take the form 
+  > As a contractor that places bids for jobs, I want to be able to quickly visualize the area of need, so I can bid appropriately.
 
-> As a <type of intended user (_who_)> I want to <use of feature use or functionality (_what_)> so that <benefit (_why_).
+* Representatives of government agencies specialize in infrastructure.
 
-Please avoid writing too much for the user story. In particular, if the way the user story is written makes it difficult to see the _who_, _what_, and _why_, then you probably need to re-write it more directly. (On the other hand, a user story should not simply be a re-statement of the intended user description.)
-
-Here is one (silly) example of an intended user, along with a user story. Please note not only the conceptual structure, but the Markdown syntax used.
-
-* People who like to use randomness in their decision making.
-
-    > As someone who enjoys randomness in my life, I need an app that lets me flip a virtual coin or roll one or more virtual dice, so that I can base my decisions on randomness, without having to carry coins or dice in my pockets.
+  > As a representative of a government agency specializing in road infrastructure, I want to be able to keep track of repair needs, completed jobs and identify problem areas before they become critical, so that our roads are safe for travel.
 
 ## Client component
 
 ### Functionality
 
-List the key functional aspects that will be provided by the user interface---i.e. tell us what the user will be able to do in the GUI.
+Using a search bar, the user will be able to directly input any specific road they are inquiring
+about.
+
+Otherwise, the user will have a drop down option to choose a state. The user will also have the
+ability to save the preferred state within the device. A map of the selected stated will appear with
+all roads and geospatial mapping. The mapping will identify the roads and base the need for repair
+using green, yellow and red areas of the road. The user will then have a drop down option to choose
+from Interstate, State, County and City roads to choose from. The map will appear with the road
+option chosen with the same identification of roads as previously. The user will also be able to
+zoom into the specific mile markers to identify areas of need.
+
+The user will have the ability to tap on any section of yellow or red section of a road to retrieve
+more information. Once the user taps or clicks on the section, a pop up window will appear. this
+window will give the user date that includes; number of vehicles reporting need, depth of axle
+change, date of las reported repairs, anticipated start date of repairs (if there is one) and cost.
 
 ### Persistent data
 
-List the content that will be stored on the client side. This should include any information that a user of your system should expect to be maintained locally (i.e. without connection to a server) across multiple sessions of use, on a single device. 
-    
+* State and county preferences.
+
 ### Device/external services
 
-If the client component will need to access special services of the device (e.g. sensors, contacts, messaging), list them here. Also, if the client component will need to access already-existing external services (e.g. real-time weather data, Open Trivia Database), those should also be listed here; any such references to external services should include links to the main page or API description page for the service.
-    
+* GPS mapping and locations.
+* Updated data from Department of Transportation for selected state.
+
 ## Server component
 
 ### Functionality
 
-List the key functional aspects that will be provided by the server component---i.e. tell us what parts of the system functionality will be performed by the server.
+Bringing up maps of roads by user requests. Calculating the variations in the axle balance to
+identify areas in any given road that will need attention and repairs. Pull data from the Department
+of Transportation from the state of user choice to retrieve the date of the last repair, any
+anticipated start date of scheduled repairs and cost of repair.
 
 ### Persistent data
 
-List the content that will be stored on the server side. This should include any information that a user of your system should expect to be accessible across multiple sessions of use, even if accessed from separate devices. In addition, if there will be data originating from some users that will then be accessible by other users, it should be part of the persistent data on the server. 
-    
+* State and county roads via mapping services
+
 ### External services
 
-If the server component will need to access already-existing external services (e.g. stock prices, Open Movie Database), those should also be listed here. Any such references to external services should include links to the main page or API description page for the service.
-    
-## Stretch goals/possible enhancements 
+* Data from sensor on vehicle.
+* Mapping and GPS services.
+*
 
-If you can identify functional elements of the software that you think might not be achievable in the scope of the project, but which would nonetheless add significant value if you were able to include them, list them here. For now, we recommend listing them in order of complexity/amount of work, from the least to the most.
+## Stretch goals/possible enhancements
+
+TBD
